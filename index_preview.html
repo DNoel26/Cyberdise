@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="home_page_html" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyberdise | Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap" rel="stylesheet"> <!--Orbitron-->
+    <script src="https://kit.fontawesome.com/3ad7481254.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="front_end_preview/css/style.css">
 </head>
-<body>
-    <header class="hero">
-        <nav>
+<body id="home_page_body">
+    <header class="scroll_snap_start_pos">
+        <nav id="top_nav">
             <ul id="left_nav_list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Best Sellers</a></li>
@@ -25,23 +30,51 @@
                 <li><a href="#">My Account</a></li>
             </ul>
         </nav>
+        <nav id="bottom_nav">
+            <form class="form_class" action="">
+                <div>
+                    <label class="label" for="category_list">Select a Product Category</label>
+                    <select class="" name="category_list" id="category_list">
+                        <option value="electronics">Electronics</option>
+                        <option value="supplements">Supplements</option>
+                        <option value="toys">Toys</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="search" name="search" id="search_bar" placeholder="Search Products...">
+                    <button class="button_class" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>   
+                </div>     
+            </form>
+        </nav>
     </header>
-    <main>
-        <section class="hero_section full_view_section">
-            <div>
-                TEST
+    <section class="hero">
+        <h1>
+            HERO TEST
+        </h1>
+        <h2>
+            HERO TEST 2
+        </h2>
+    </section>
+    <main class="scroll_snap_start_pos">
+        <section class="no_hero full_view_section">
+            <div class="full_view_section">
+                <h1>TEST 2</h1>
             </div>
-            <div>
-
-            </div>
-        </section>
-        <section class="no_hero_section full_view_section">
-            <h1>TEST 2</h1>
-        </section>
-        <section class="no_hero_section full_view_section">
-            <h1>TEST 3</h1>
+            <div class="full_view_section" style="background-color: blue;">
+                <h1>TEST 3</h1>
+            </div>    
+            <div class="full_view_section">
+                <h1>TEST 4</h1>
+            </div>    
         </section>
     </main>
+    <section class="last_section scroll_snap_start_pos">
+        <div>
+            ABOVE FOOTER
+        </div>
+    </section>
     <footer>
         <div>
             FOOTER
