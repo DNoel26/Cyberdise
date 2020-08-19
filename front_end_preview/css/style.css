@@ -1,0 +1,117 @@
+:root
+{
+    --main_bg_color: red;
+    --header_bg_color: #F5F5F5;
+    --header_font_color: #00467d;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    /*overflow: hidden;*/
+    scrollbar-width: none;
+}
+
+/*body::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}*/
+
+header
+{
+    width: 100%;    
+    max-height: 60px;
+    height: 60px;
+    background: none;
+    background-color: var(--header_bg_color);
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    max-width: 1500px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#logo_div
+{
+    max-height: 60px;
+    height: 100%;
+}
+
+#logo_div > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 2px;
+}
+
+nav ul
+{
+    max-height: 60px;
+    height: 60px;   
+}
+
+#left_nav_list
+{
+    text-align: right;
+}
+
+#right_nav_list
+{
+    text-align: left;
+}
+
+nav li
+{
+    display: inline-block;
+    list-style: none;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 16px;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: var(--header_font_color);
+}
+
+main
+{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    background: none;
+
+}
+
+.full_view_section
+{
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.hero_section
+{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url(/front_end_preview/img/robot_optimized.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

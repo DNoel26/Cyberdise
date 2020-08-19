@@ -1,0 +1,5 @@
+all_images_gi/
+all_videos_gi/
+misc_gi/
+node_modules/
+config/keys.env
