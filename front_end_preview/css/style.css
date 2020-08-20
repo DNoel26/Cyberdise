@@ -3,9 +3,12 @@
     --main_bg_color: red;
     --header_bg_color: #F5F5F5;
     --header_bg_color_2: #00467d;
+    --header_bg_color_3: #81cbed; 
     --header_font_color: #00467d;
     --header_font_color_2: #F5F5F5;
-    --header_font_color_3: #01d9fe;
+    --header_font_color_3: #81cbed;
+    --header_font_color_4: #01d9fe;
+    --header_font_color_5: #ace2fa;
     --font_family_orbitron: 'Orbitron', sans-serif;
 }
 
@@ -41,10 +44,11 @@
 body
 {
     font-family: 'Orbitron', sans-serif;
+    color: var(--header_font_color_2);
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0.01rem;
-    word-spacing: 0.1rem;
+    word-spacing: 0.01rem;
 }
 
 body::-webkit-scrollbar
@@ -52,6 +56,9 @@ body::-webkit-scrollbar
     width: 0;
     height: 0;
 }
+
+                    /* ALL HTML AND BODY CODE ABOVE */
+                    /* SPECIFIC CLASSES AND IDS BELOW */
 
 .button_class
 {
@@ -67,6 +74,66 @@ body::-webkit-scrollbar
     vertical-align: middle;
 }
 
+.floating_icons
+{
+    display: inline-block;
+    max-height: 60px;
+    height: 30px;
+    max-width: 60px;
+    width: 30px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 20px;
+    background-color: var(--header_font_color_3);
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    transition: 1.2s;
+}
+
+.floating_icons > img
+{
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    justify-self: center;
+    filter: invert(68%) sepia(78%) saturate(210%) hue-rotate(157deg) brightness(94%) contrast(97%);
+}
+
+.floating_icons.shopping_cart_icons
+{
+    display: grid;
+    position: fixed;
+    max-height: 100px;
+    max-width: 100px;
+    height: 80px;
+    width: 80px;
+    top: 15px;
+    left: 92vw;
+    visibility: visible;
+}
+
+.shopping_cart_icons > img
+{
+    object-fit: contain;
+    height: 70px;
+    width: 70px;
+    margin-left: -2px;
+    padding: 16px 10px 4px 10px;
+    filter: invert(20%) sepia(34%) saturate(2859%) hue-rotate(182deg) brightness(103%) contrast(105%);
+}
+
+.shopping_cart_icons > h3
+{
+    margin: 0 auto;
+    margin-bottom: -16px;
+    padding-left: 6px;
+    color: black;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
 .scroll_snap_start_pos
 {
     scroll-snap-align: start;
@@ -74,7 +141,7 @@ body::-webkit-scrollbar
 
 .fa-search
 {
-    color: var(--header_font_color_2);
+    color: var(--header_font_color);
     width: 32px;
     height: 32px;
     text-align: center;
@@ -86,17 +153,22 @@ body::-webkit-scrollbar
     line-height: 32px;
 }
 
+                    /* SPECIFIC CLASSES AND IDS ABOVE */
+                    /* HEADER FORM DATA BELOW */
+
 form, input, select, button /*Font Family Inheritance*/
 {
     font-family: inherit;
+    font-weight: 400;
+    font-size: 0.7rem;
 }
 
 nav .form_class
 {
     /*background-color: red;*/
     display: grid;
-    grid-template-columns: 450px 450px;
-    max-width: 900px;
+    grid-template-columns: 600px 600px;
+    max-width: 1200px;
     max-height: 50px;
     height: 100%;
     margin: 0 auto;
@@ -123,6 +195,8 @@ nav .form_class > div:nth-child(2)
 nav label
 {
     color: var(--header_font_color);
+    font-size: 0.95rem;
+    font-weight: 900;
 }
 
 nav .form_class button
@@ -130,7 +204,7 @@ nav .form_class button
     height: 40px;
     width: 40px;
     border-radius: 12px;
-    background-color: var(--header_bg_color_2);
+    /*background-color: var(--header_bg_color_2);*/
 }
 
 nav .form_class button:hover, nav .form_class button:hover .fa-search
@@ -140,6 +214,9 @@ nav .form_class button:hover, nav .form_class button:hover .fa-search
     border-radius: 12px;
 }
 
+                    /* HEADER FORM DATA ABOVE */
+                    /* HEADER GENERAL DATA BELOW */
+
 header
 {
     width: 100%;    
@@ -147,7 +224,6 @@ header
     height: 110px;
     background: none;
     background-color: var(--header_bg_color);
-    font-weight: 600;
 }
 
 nav
@@ -156,12 +232,14 @@ nav
     width: 100%;
     margin: 0 auto;
     background: none;
+    font-size: 1.1rem;
+    font-weight: 900;
 }
 
 #top_nav
 {
     display: grid;
-    grid-template-columns: 1fr 300px 1fr;     
+    grid-template-columns: 1fr 360px 1fr;     
     height: 60px;
 }
 
@@ -177,7 +255,7 @@ nav
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 #bottom_nav
@@ -265,15 +343,16 @@ nav li
     list-style: none;
     height: 100%;
     line-height: 60px;
-    padding: 0 16px;
+    padding: 0 8px;
 }
 
 nav a
 {
     text-decoration: none;
     color: var(--header_font_color_2);
+    font-size: 0.8rem;
     font-weight: 900;
-    transition: 0.6s;
+    transition: 1.2s;
 }
 
 nav a:hover
@@ -283,7 +362,19 @@ nav a:hover
     border-bottom-style: solid;
     border-bottom-width: 2px;
     padding-bottom: 6px;
+    transition: 0.6s;
 }
+
+nav a:hover .floating_icons
+{
+    height: 30px;
+    width: 30px;
+    visibility: visible;
+    transition: 0.6s;
+}
+
+                    /* HEADER GENERAL DATA ABOVE */
+                    /* FOOTER GENERAL DATA BELOW */
 
 footer
 {
@@ -291,16 +382,60 @@ footer
     height: 300px;
 }
 
+                    /* FOOTER GENERAL DATA ABOVE */
+                    /* HERO SECTION GENERAL DATA BELOW */
+
 .hero
 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     height: calc(100vh - 110px);
     width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("/front_end_preview/img/robot_optimized.jpg");
-    /*background-image: url(/front_end_preview/img/robot_optimized.jpg);*/
+    /*background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url("/front_end_preview/img/robot_optimized.jpg");
+    */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.hero > div
+{
+    display: grid;
+    grid-template-rows: auto auto 60vh;
+    max-width: 1600px;
+    text-align: center;
+}
+
+.hero h1, .hero p
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.hero > div > div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero > div > div > div:nth-child(1)
+{
+    background-color: red;
+}
+
+.hero > div > div > div:nth-child(2)
+{
+    background-color: blue;
+}
+
+.hero > div > div > div:nth-child(3)
+{
+    background-color: yellow;
+}
+
+                    /* HERO SECTION GENERAL DATA ABOVE */
+                    /* MAIN SECTION GENERAL DATA BELOW */
 
 main
 {
@@ -339,3 +474,5 @@ h1, h2
     color: red;
     font-size: 3rem;
 }
+
+                    /* MAIN SECTION GENERAL DATA ABOVE */
