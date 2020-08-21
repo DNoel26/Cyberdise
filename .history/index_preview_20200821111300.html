@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html id="home_page_html" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberdise | Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!--Roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;669;700;800;900&display=swap" rel="stylesheet"> <!--Orbitron-->
+    <script src="https://kit.fontawesome.com/3ad7481254.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="front_end_preview/css/style.css">
+</head>
+<body id="home_page_body">
+    <header id="home_page_start" class="scroll_snap_start_pos">
+        <nav id="top_nav">
+            <div>
+                <ul id="left_nav_list">
+                    <div>
+                        <li><a href=""><img class="floating_icons" src="/front_end_preview/img/icons/home.png" alt="Home Icon">Home</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/medal.png" alt="Medal Icon">Best Sellers</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/shopping_bag.png" alt="Shopping Bag Icon">Shop Now</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/box.png" alt="Home Icon">Deals</a></li>    
+                    </div>
+                </ul>
+                <div id="logo_div">
+                    <img src="front_end_preview/img/cyberdise_logo_no_bg.png" alt="Cyberdise Logo">
+                </div>
+                <ul id="right_nav_list">
+                    <div>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/compose.png" alt="Pen Icon">Signup</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/key.png" alt="Key Icon">Login</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/cart.png" alt="Cart Icon">My Cart</a></li>
+                        <li><a href="#"><img class="floating_icons" src="/front_end_preview/img/icons/person.png" alt="Home Icon">My Account</a></li>    
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <nav id="bottom_nav">
+            <div>
+                <form class="form_class" action="">
+                    <div>
+                        <label class="label" for="category_list">Select a Product Category</label>
+                        <select class="" name="category_list" id="category_list">
+                            <option value="electronics">Electronics</option>
+                            <option value="supplements">Supplements</option>
+                            <option value="toys">Toys</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="search" name="search" id="search_bar" placeholder="Search Products...">
+                        <button class="button_class" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>   
+                    </div>     
+                </form>
+            </div> 
+        </nav>
+        <div class="floating_icons shopping_cart_icons">
+            <h3>300</h3>
+            <img src="/front_end_preview/img/icons/cart_solid.png" alt="Shopping Cart Icon">
+        </div>
+    </header>
+    <section class="hero" id="home_page_hero">
+        <div class="hero_img">
+            <img src="/front_end_preview/img/robot_optimized.jpg" alt="Robot holding light">
+        </div>
+        <div class="hero_content"> 
+            <h1>
+                Welcome to the Cyberdise Online Store
+            </h1>
+            <p>
+                Buy or Sell products from anywhere in the world! We use machine learning and advanced A.I. to help us suggest 
+                the best products for you!
+            </p>
+            <div>
+                <!--<div class="free_flow_container">
+                    <div id="hero_media">
+                        <video autoplay src="/front_end_preview/media/atom_video.mp4"></video>   
+                    </div>     
+                </div>-->                
+                <div>RED</div>
+                <div>BLUE</div>
+                <div>YELLOW</div>
+            </div>
+        </div>
+    </section>
+    <main id="home_page_main"> <!--This section to become dynamic-->
+        <section class="no_hero scroll_snap_start_pos">
+            <div class="full_view_section">
+                <div class="top_view_section">
+                    <div>
+                        <h2>
+                            Best Sellers:<br>Electronics   
+                        </h2>
+                        <a href="#home_page_main">
+                            <i class="fas fa-angle-double-up"><span>Scroll to Previous Section</span></i>  
+                        </a>
+                        <a href="#home_page_start">
+                            <i class="fas fa-angle-double-up"><span>Scroll to Top of Page</span></i>  
+                        </a>
+                    </div>
+                </div>
+                <div class="mid_view_section"> <!--Background image full 100% width-->
+                    <div>
+                        <div>
+                            <h3>
+                                See Our Most Popular Products in this Category    
+                            </h3>   
+                        </div>
+                        <div class="best_seller_container">
+                            <div class="scroll_snap_start_pos">
+                                <img src="/front_end_preview/img/fake_db_imgs/echo_dot.jpg" alt="">
+                                <h4>
+                                    Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sunt, autem asperiores provident maxime accusantium!
+                                </h4>
+                                <h4>
+                                    Price: $109.99
+                                </h4>
+                                <a href="">
+                                    See Reviews
+                                </a>
+                            </div>
+                            <div class="scroll_snap_start_pos">
+                                <img src="/front_end_preview/img/fake_db_imgs/lenovo_laptop.jpg" alt="">
+                                <h4>
+                                    Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sunt, autem asperiores provident maxime accusantium!
+                                </h4>
+                                <h4>
+                                    Price: $575.00
+                                </h4>
+                                <a href="">
+                                    See Reviews
+                                </a>
+                            </div>
+                            <div class="scroll_snap_start_pos">
+                                <img src="/front_end_preview/img/fake_db_imgs/" alt="">
+                                <h4>
+                                    Description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sunt, autem asperiores provident maxime accusantium!
+                                </h4>
+                                <h4>
+                                    Price: $109.99
+                                </h4>
+                                <a href="">
+                                    See Reviews
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="bot_view_section">
+                    <div>
+                        <a href="#home_page_end">
+                            <i class="fas fa-angle-double-down"><span>Scroll to Bottom of Page</span></i>  
+                        </a>
+                        <a href="#home_page_main">
+                            <i class="fas fa-angle-double-down"><span>Scroll to Next Section</span></i>  
+                        </a>
+                        <a href="">
+                            View All Products in this Category  
+                        </a>                        
+                    </div>
+                </div>
+            </div>
+            <div class="full_view_section">
+                <div class="top_view_section">
+
+                </div>
+                <div class="mid_view_section"> <!--Background colour full 100% width-->
+                    <div >
+                        TEXT
+                    </div>
+                </div>
+                <div class="bot_view_section">
+
+                </div>
+            </div>
+            </div>    
+            <div class="full_view_section">
+                <div class="top_view_section">
+                    <h2>
+
+                    </h2>
+                </div>
+                <div class="mid_view_section"> <!--Background colour full 100% width-->
+                    <div >
+                        TEXT
+                    </div>
+                </div>
+                <div class="bot_view_section">
+
+                </div>
+            </div>
+            </div>    
+        </section>
+    </main>
+    <section  class="last_section scroll_snap_start_pos">
+        <div>
+            ABOVE FOOTER
+        </div>
+    </section>
+    <footer id="home_page_end">
+        <div>
+            FOOTER
+        </div>
+    </footer>
+</body>
+</html>
