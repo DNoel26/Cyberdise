@@ -1254,7 +1254,7 @@ footer
 .best_seller_preview img:hover
 {
     cursor: pointer;
-    /*border: 16px solid var(--bg_color_3);*/
+    /*border: 16px solid var(--bg_color_3);
     transition: 0.3s;
 }
 
