@@ -938,7 +938,7 @@ footer
 
 #home_page_main h2
 {
-    color: var(--font_color);
+    color: var(--font_color_2);
     font-size: 1.8rem;
     font-weight: 900;
 }
@@ -1425,7 +1425,7 @@ footer
     /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/front_end_preview/img/laptop_shopping.jpg");  
     background-position: center;
     background-size: cover;*/
-    background-color: white;
+    backg
 }
 
 .no_hero > div:nth-child(even) .top_view_section /* CHANGE DIV TO SECTION AFTER TESTING url("/front_end_preview/img/laptop_shopping.jpg")*/

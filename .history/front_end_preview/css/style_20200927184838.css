@@ -938,7 +938,7 @@ footer
 
 #home_page_main h2
 {
-    color: var(--font_color);
+    color: var(--font_color_2);
     font-size: 1.8rem;
     font-weight: 900;
 }
@@ -1005,6 +1005,13 @@ footer
     height: 100vh;
     scroll-snap-align: start;
     /*overscroll-behavior: contain;*/
+}
+
+.top_view_section, .bot_view_section
+{
+    max-height: 20vh;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .top_view_section, .bot_view_section

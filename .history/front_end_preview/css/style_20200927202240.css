@@ -870,6 +870,7 @@ footer
     align-self: flex-end;
     max-height: 70px;
     margin-top: 16px;
+    font-family: Helvetica;
 }
 
 .hero i

@@ -938,7 +938,7 @@ footer
 
 #home_page_main h2
 {
-    color: var(--font_color);
+    color: var(--font_color_2);
     font-size: 1.8rem;
     font-weight: 900;
 }
